@@ -18,11 +18,9 @@ def get_first_n_prime(n):
     primes = [2, 3, 5, 7, 11, 13, 17, 19]
     i = 18
     while len(primes) < n:
-        print i
         i += 6
         if is_prime(i-1, primes):
             primes.append(i-1)
-            print primes
         if is_prime(i+1, primes):
             primes.append(i+1)
     return primes
