@@ -25,4 +25,4 @@ for exp in l:
         cur_exp += 1
     res *= mult
 
-print reduce(lambda x, y: int(x) + int(y), str(res))
+print sum(map(int, str(res)))
