@@ -9,8 +9,8 @@ def get_divisor_sum(n):
     dsum = 1
     isqr = int(floor(sqrt(n)))
     if isqr * isqr == n:
-        dsum += isqr
-    for j in range(2, isqr):
+        dsum -= isqr
+    for j in range(2, isqr+1):
         if n % j == 0:
             dsum += (j + n/j)
     return dsum
