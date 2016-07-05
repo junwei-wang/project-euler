@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 from math import sqrt, ceil
 
-def get_primes_under_n(num):
+def generate_primes_under_n(num):
     length = int(ceil(num/2.0))
     sevie = [True] * length # 1, 3, 5, 7, ..., n-1
     sevie[0] = False

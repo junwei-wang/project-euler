@@ -14,7 +14,7 @@ def is_prime(num, prime_list):
             return False
     return True
 
-def get_first_n_prime(n):
+def generate_first_n_prime(n):
     primes = [2, 3, 5, 7, 11, 13, 17, 19]
     i = 18
     while len(primes) < n:
