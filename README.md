@@ -1,3 +1,3 @@
-# My solutions on ProjectEuler
+# My solutions to [ProjectEuler](https://projecteuler.net)
 
-[![project-euler-wakemecn](https://projecteuler.net/profile/wakemecn.png#1)](https://projecteuler.net/profile/wakemecn.png)
+[![project-euler-wakemecn](https://projecteuler.net/profile/wakemecn.png)](https://projecteuler.net/profile/wakemecn.png)
