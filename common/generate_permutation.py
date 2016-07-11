@@ -16,5 +16,5 @@ def permutation(arr, m, func):
         permutation(arr, m+1, func)
         swap(arr, m, i)
 
-def full_permuataion(arr, func):
+def full_permutation(arr, func):
     permutation(arr, 0, func)
