@@ -1,10 +1,5 @@
 #!/usr/bin/env python
-
-"""
-It takes about an hour on Macbook Pro.
-"""
-
-from math import sqrt, ceil
+from math import sqrt,ceil
 from tqdm import tqdm
 
 limit = 10 ** 8
@@ -29,24 +24,20 @@ def generate_primes_under_n(num):
             for j in range(start, length, step):
                 sevie[j] = False
 
-    primes = [2*k+1 for k, v in enumerate(sevie) if v]
-    primes = [2] + primes
+    return sevie
 
-    return primes
-
-primes = generate_primes_under_n(limit_sqrt)
+sevie = generate_primes_under_n(limit)
 
 def is_prime(n):
-    n_sqrt = int(sqrt(n))
-    for p in primes:
-        if p >= n_sqrt+1:
-            return True
-        if n % p == 0:
-            return False
-    prime_map[n] = True
-    return True
+    if n == 2:
+        return True
+    if n & 1 == 0:
+        return False
+    if n <= limit:
+        return sevie[(n-1)/2]
+    raise Exception('cannot be here')
 
-sum = 1 + 2
+sum = 1+2
 for i in tqdm(range(1, limit/4)):
     n = i*4 + 2
     n_sqrt = int(sqrt(n))
