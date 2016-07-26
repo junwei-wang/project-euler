@@ -36,7 +36,6 @@ def get_minimal(matrix):
                             t_i = i+1
                             t_j = j
                             if t_i >= length - 1:
-                                print t_i, t_j, next
                                 return next
                     if j<length-1 and not minimal_matrix[i][j+1]:
                         t = minimal_matrix[i][j] + matrix[i][j+1]
@@ -53,4 +52,4 @@ def get_minimal(matrix):
         minimal_matrix[t_i][t_j] = next
 
 
-get_minimal(matrix)
+print get_minimal(matrix)
